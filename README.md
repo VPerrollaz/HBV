@@ -1,6 +1,6 @@
 Introduction à python pour M1-géologie
 
-6x1h30 + 2x2h pour le projet
+13h : 6x1h30 + 2x2h pour le projet
 
 Objectifs
 - Installation python, plutôt windows
