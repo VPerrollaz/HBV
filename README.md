@@ -10,11 +10,13 @@ Objectifs
     - list, str
     - for
     - if
-    - dir/help
     - méthodes/fonctions mutations
     - def
     - import
 - Supplements : 
+    - type
+    - dir
+    - help
     - open
     - try except
     - with
