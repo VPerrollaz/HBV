@@ -7,9 +7,9 @@ Objectifs
 - Simple workflow (Notepad++ pour windows?)
 - Fondamentaux du langage :
     - int, float, opérateurs
+    - bool, if, while
     - list, str
     - for
-    - if
     - méthodes/fonctions mutations
     - def
     - import
