@@ -14,6 +14,10 @@ Objectifs
     - méthodes/fonctions mutations
     - def
     - import
+- Supplements : 
+    - open
+    - try except
+    - with
 - Pièges classiques
 - Navigation arborescence
 - Lecture fichier/parsing csv/tsv
