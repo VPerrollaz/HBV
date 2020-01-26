@@ -79,3 +79,22 @@
 >>> (1e1 + 1e-10) / 1e10
 1.0
 ```
+
+## Variables
+
+- Les variables en python sont des associations entre un nom et un objet, la connexion étant effectuée par l'opérateur `=`.
+```python
+>>> x = 1
+>>> 1 + x
+```
+- Les noms de variables en python contiennent minuscule, majuscule, chiffre ou underscore `_`. Ils doivent commencer par une lettre.
+```python
+>>> Abd1__ = 123
+>>> 1aze = 1
+  File "<stdin>", line 1
+      1aze = 1
+             ^
+SyntaxError: invalid syntax
+```
+- On essayera au maximum d'utiliser des noms de variables décrivant le contenu attendu. On séparera les mots par un underscore.
+
