@@ -143,6 +143,8 @@ False
 Divisible par 3
 ```
 
+**ATTENTION** En python les blocs d'instructions sont démarqués par le niveau d'indentation (alignement horizontal) et non par des accolades ou autres séparateurs comme dans la majorité des autres langages de programmation.
+
 - Répétition d'une suite d'instructions tant qu'une expression booléenne est Vrai, en python
 
 `while` EXPRESSION BOOLEENNE `:`
@@ -169,4 +171,4 @@ Divisible par 3
 1
 ```
 
-**ATTENTION** En python les blocs d'instructions sont démarqués par le niveau d'indentation (alignement horizontal) et non par des accolades ou autres séparateurs comme dans la majorité des autres langages de programmation.
+**ATTENTION** Il faut être sûr que l'expression booléenne intervenant dans le `while` est bien modifiée dans le bloc sous peine de rencontrer une boucle infinie.
