@@ -11,4 +11,8 @@
 
 1. [Nombres](./nombres.md)
 2. [Booléens](./logique.md)
-3. [Collections](./collections.md)
+3. [Tuples](./tuples.md)
+4. [Listes](./listes.md)
+5. [Chaines de caractères](./string.md)
+6. [Dictionnaires](./dictionnaires.md)
+7. [boucle for](./boucle_for.md)
