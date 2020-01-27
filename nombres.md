@@ -1,6 +1,6 @@
-# Manipulations numériques #
+# Nombres
 
-## Opérateurs arithmétiques ##
+## Opérateurs arithmétiques 
 
 - addition `+`
 ```python
@@ -96,5 +96,11 @@
              ^
 SyntaxError: invalid syntax
 ```
-- On essayera au maximum d'utiliser des noms de variables décrivant le contenu attendu. On séparera les mots par un underscore.
+- On essayera au maximum d'utiliser des noms de variables décrivant le contenu attendu. On séparera les mots par un underscore. 
+
+- On peut mettre une expression à droite de `=` elle sera évaluée avant l'affectation
+```python
+>>> x = 1 + 2 * 3 / 4
+2.5
+```
 
