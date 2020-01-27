@@ -2,15 +2,12 @@
 
 ## Général
 
-- comparer markdown et rst
-- table des matières
+- comparer markdown, org, rst ou carrément html
 - faciliter navigation
 
 ## Thèmes
 
-- tuples, listes, string et boucle for
-- méthodes/=fonctions, mutation
-- dictionnaires et "itérateurs"
+- gestion fichiers (et différence buffer) (et différence buffer)
 - fonctions
 - gestion d'erreurs
-- open, pathlib
+- modules ex: pathlib
