@@ -64,6 +64,106 @@ Quatrième ligne
 
 ## Lecture
 
+- On a plusieurs moyen d'accéder au contenu d'un fichier ouvert avec `open` le plus élémentaire est la méthode `write` qui renvoit tout le contenu du fichier dans une chaine de caractère.
+```python
+>>> fichier = open("test", "r")
+>>> texte = fichier.read()
+>>> fichier.close()
+>>> print(texte)
+Première ligne
+Seconde ligne
+Troisième ligne
+Quatrième ligne
+
+```
+**ATTENTION** une fois un fichier lu avec read il faut réaliser que le "curseur virtuel" est en fin de fichier donc une seconde lecture n'apporte rien.
+
+```python
+>>> fichier = open("test", "r")
+>>> texte = fichier.read()
+>>> texte_bis = fichier.read()
+>>> fichier.close()
+>>> print(texte)
+Première ligne
+Seconde ligne
+Troisième ligne
+Quatrième ligne
+
+>>> print(texte_bis)
+
+```
+On peut alors soit fermer et réouvrir le fichier soit déplacer le curseur virtuel avec la méthode `seek` qui prend en argument la position voulue.
+```python
+>>> fichier = open("test", "r")
+>>> texte = fichier.read()
+>>> fichier.seek(0)
+0
+>>> texte_bis = fichier.read()
+>>> fichier.close()
+>>> print(texte)
+Première ligne
+Seconde ligne
+Troisième ligne
+Quatrième ligne
+
+>>> print(texte_bis)
+Première ligne
+Seconde ligne
+Troisième ligne
+Quatrième ligne
+
+```
+- Pour les gros fichiers il peut se révéler pratique voir obligatoire de procéder ligne à ligne. A cette fin on peut (entre autre) utiliser le fait qu'un fichier est itérable et produit alors les lignes les unes après les autres.
+```python
+>>> fichier = open("test", "r")
+>>> for ligne in fichier:
+...     print(ligne)
+...
+Première ligne
+
+Seconde ligne
+
+Troisième ligne
+
+Quatrième ligne
+
+
+>>> fichier.close()
+```
+**ATTENTION** on voit que chaque ligne arrive ici avec son propre caractère de saut de ligne, comme `print` en rajoute un automatiquement on a le formattage ci-dessus par rapport au fichier de départ.
+
+- On mentionnera aussi la méthode `readlines` qui renvoit une liste de lignes.
+```python
+>>> fichier = open("test", "r")
+>>> lignes = fichier.readlines()
+>>> fichier.close()
+>>> print(lignes)
+['Première ligne\n', 'Seconde ligne\n', 'Troisième ligne\n', 'Quatrième ligne\n']
+```
+- Finalement la méthode `readline`  (NOTER L'ABSENCE DE 's') renvoit la ligne suivante. Mais en fin de fichier elle renvoit juste une chaine vide alors qu'une ligne vide contient au moins `\n`.
+```python
+>>> fichier = open("test", "r")
+>>> fichier.readline()
+'Première ligne\n'
+>>> fichier.readline()
+'Seconde ligne\n'
+>>> fichier.readline()
+'Troisième ligne\n'
+>>> fichier.readline()
+'Quatrième ligne\n'
+>>> fichier.readline()
+''
+>>> fichier.readline()
+''
+>>> fichier.readline()
+''
+>>> fichier.readline()
+''
+>>> fichier.readline()
+''
+>>> fichier.close()
+```
+
 ## Différence fichier et buffer
 
 - Description du problème
@@ -153,4 +253,23 @@ ligne 10
 
 >>> pour_ecrire.close()
 >>> pour_lire.close()
+```
+
+## Remarque finale
+
+On procédera en pratique un peut différement de ce qui a été présenté ci-dessus car si l'interpréteur rencontre une exception entre l'ouverture et la fermeture cette dernière n'est pas assurée. On utilisera alors soit une librairie comme `pathlib` que l'on couvrera plus loin dans le cours soit une syntaxe plus sophistiquée où l'interaction avec un fichier a lieu à l'intérieur d'un bloc `with` la fermeture du fichier est exécutée automatiquement en sortie de bloc.
+```python
+>>> with open("test", "r") as fichier:
+...     for ligne in fichier:
+...         print(ligne)
+...
+Première ligne
+
+Seconde ligne
+
+Troisième ligne
+
+Quatrième ligne
+
+
 ```
