@@ -7,7 +7,7 @@
 
 ## Thèmes
 
-- gestion fichiers (et différence buffer) (et différence buffer)
+- Ajouter un exemple d'utilisation de dictionnaire?
 - fonctions
 - gestion d'erreurs
 - modules ex: pathlib
