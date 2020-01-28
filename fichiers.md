@@ -65,3 +65,92 @@ Quatrième ligne
 ## Lecture
 
 ## Différence fichier et buffer
+
+- Description du problème
+```python
+>>> pour_ecrire = open("test", "w")
+>>> pour_lire = open("test", "r")
+>>> for i in range(1, 11):
+...     pour_ecrire.write("ligne {}\n".format(i))
+...     print(pour_lire.readline())
+...
+8
+''
+8
+''
+8
+''
+8
+''
+8
+''
+8
+''
+8
+''
+8
+''
+8
+''
+9
+''
+>>> pour_ecrire.close()
+>>> pour_lire.close()
+```
+On ne voit que des lignes vides s'afficher avec les print et pourtant le fichier `test` contient
+
+```python
+ligne 1
+ligne 2
+ligne 3
+ligne 4
+ligne 5
+ligne 6
+ligne 7
+ligne 8
+ligne 9
+ligne 10
+```
+
+- La solution du problème vient de la nature des objets renvoyés par `open`, ce sont des buffers intermédiaires et non pas directement les fichiers. Par défaut `write` écrit dans le buffer et ce n'est qu'à sa fermeture que le buffer transfère son contenu dans le fichier. On peut forcer le transfert avec la méthode `flush`.
+```python
+>>> pour_ecrire = open("test", "w")
+>>> pour_lire = open("test", "r")
+>>> for i in range(1, 11):
+...     pour_ecrire.write("ligne {}\n".format(i))
+...     pour_ecrire.flush()
+...     print(pour_lire.readline())
+...
+8
+ligne 1
+
+8
+ligne 2
+
+8
+ligne 3
+
+8
+ligne 4
+
+8
+ligne 5
+
+8
+ligne 6
+
+8
+ligne 7
+
+8
+ligne 8
+
+8
+ligne 9
+
+9
+ligne 10
+
+>>> pour_ecrire.close()
+>>> pour_lire.close()
+```
