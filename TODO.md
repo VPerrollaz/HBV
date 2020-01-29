@@ -8,6 +8,6 @@
 ## Thèmes
 
 - Ajouter un exemple d'utilisation de dictionnaire?
+- Pour la gestion d'erreurs rajoutés les erreurs classiques en exercice.
 - fonctions
-- gestion d'erreurs
 - modules ex: pathlib
