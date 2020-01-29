@@ -4,6 +4,7 @@
 
 - comparer markdown, org, rst ou carrément html
 - faciliter navigation
+- Rajouter des sections **pour aller plus loin**
 
 ## Thèmes
 
