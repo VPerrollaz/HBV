@@ -5,7 +5,7 @@
 - On peut aussi récupérer une distribution qui vient avec de nombreuses bibliothèques supplémentaires, (i.e. qui ne sont pas dans la bibliothèques standard comme `numpy`, `scipy`, etc) et un gestionnaire de paquet par exemple [Anaconda](https://www.anaconda.com/distribution/)
 - Pour les sessions interactives on privilégiera `ipython` dans un terminal ou `jupyterlab` pour des sessions interactives plus souples à l'utilisation et plus sophistiquées pour toute visualisation.
 - Pour des scripts on pourra utiliser des éditeurs de texte raisonnables tels que `gedit` sous linux ou `notepad++` sous windows par exemple.
-- Mais on peut aussi se tourner vers des IDE tels que [Visual Studio Code](https://code.visualstudio.com/) ou [Atom](https://atom.io/). Ces derniers sont tous les deux gratuits et disponibles sur linux mac et windows.
+- Mais on peut aussi se tourner vers des IDE tels que [Visual Studio Code](https://code.visualstudio.com/) ou [Atom](https://atom.io/). Ces derniers sont tous les deux gratuits et disponibles sur linux mac et windows. On pourra aussi essayer [pycharm](https://www.jetbrains.com/fr-fr/pycharm/) la version **community** est elle aussi gratuite et d'excellente qualité.
 
 ## Cours
 
