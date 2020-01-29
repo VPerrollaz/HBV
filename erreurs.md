@@ -44,6 +44,7 @@ douze 0
 21 3
 ```
 L'erreur ne viendra plus de la division par zéro mais pas l'opération qui demande de passe de la chaine `'12'` à un `float`, il est nettement plus délicat ici d'écrire un test de validation pour la conversion d'une chaine en `float` le plus simple est d'essayer de le faire et d'intercepter l'erreur éventuelle.
+
 **ATTENTION** on a différents types d'exception suivant la situation qui l'a provoqué par exemple.
 
 ```python
