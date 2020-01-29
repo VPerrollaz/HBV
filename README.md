@@ -17,6 +17,6 @@
 6. [Dictionnaires](./dictionnaires.md)
 7. [Boucle for](./boucle_for.md)
 8. [Fichiers](./fichiers.md)
-9. [Erreurs](./erreurs.md) (A faire)
+9. [Erreurs](./erreurs.md) (En cours)
 10. [Fonctions](./fonctions.md) (A faire)
 11. [Modules](./modules.md) (A faire)
