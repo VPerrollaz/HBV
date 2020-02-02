@@ -18,5 +18,5 @@
 7. [Boucle for](./boucle_for.md)
 8. [Fichiers](./fichiers.md)
 9. [Erreurs](./erreurs.md)
-10. [Fonctions](./fonctions.md) (A faire)
+10. [Fonctions](./fonctions.md) (En cours)
 11. [Modules](./modules.md) (A faire)
