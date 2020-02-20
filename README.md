@@ -19,4 +19,4 @@
 8. [Fichiers](./fichiers.md)
 9. [Erreurs](./erreurs.md)
 10. [Fonctions](./fonctions.md) (En cours)
-11. [Modules](./modules.md) (A faire)
+11. [Modules](./modules.md) (En cours)
