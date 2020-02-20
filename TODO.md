@@ -12,3 +12,4 @@
 - Pour la gestion d'erreurs rajoutés les erreurs classiques en exercice.
 - Pour les fonctions parlé de l'intérêt des noms, d'architecture modulaire (DRY)
 - modules ex: pathlib
+- Parler d'autocomplétion comment de découvrir des nouvelles possibilités.
