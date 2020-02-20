@@ -50,7 +50,6 @@ print([somme_nombres(nbr) for nbr in range(2, 20) if est_premier(nbr)])
 ```
 
 
-
 - Les variables introduite dans le bloc d'instructions de la fonction existe indépendament des autres variables. On dit qu'on a deux espaces de nom le local (fonction) et le global (extérieur).
 
 ## Bonnes pratiques
